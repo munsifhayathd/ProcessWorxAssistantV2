@@ -3,17 +3,6 @@ interface ChatResponse {
   error?: string;
 }
 
-interface MessageContent {
-  text: {
-    value: string;
-  };
-}
-
-interface Message {
-  role: 'user' | 'assistant';
-  content: MessageContent[];
-}
-
 interface APIResponse {
   body: string[];
   statusCode: number;
